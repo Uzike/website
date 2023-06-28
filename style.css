@@ -3,15 +3,36 @@
     src: url(Inter-SemiBold.ttf);
 }
 
+@keyframes color-change {
+    0% {
+      color: blue;
+    }
+  
+    50% {
+      color: red;
+    }
+  
+    100% {
+      color: blue;
+    }
+}
+
 body {
     font-family: Inter-SemiBold; 
     font-size: 11px; 
     background-color: #5988FF; 
     color: #FFFFFF;
 }
+
+
 h1 {
     color: #FFFFFF; 
     font-size: 24px; 
     font-family: Inter-SemiBold; 
 }
+
+h1:hover {
+    animation: color-change 3s infinite;
+}
+
 
